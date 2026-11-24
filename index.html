@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Technical SEO content writer portfolio featuring solar battery education, research-led product writing, SEO strategy, and content optimisation." name="description"/>
+<meta content="#18232f" name="theme-color"/>
+<title>SEO Content Writer | Portfolio</title>
+<style>
+    :root {
+      --ink: #18232f;
+      --muted: #586574;
+      --accent: #b64235;
+      --paper: #ffffff;
+      --soft: #f3f5f7;
+      --soft-red: #f8efed;
+      --line: #d9dee4;
+      --max: 980px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #f5f6f7;
+      font: 16px/1.7 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    .shell { width: min(var(--max), calc(100% - 36px)); margin: 0 auto; }
+    .topbar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(255,255,255,.94); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav {
+      min-height: 62px; display: flex; align-items: center;
+      justify-content: space-between; gap: 18px;
+    }
+    .brand { font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .navlinks { display: flex; gap: 18px; flex-wrap: wrap; }
+    .navlinks a { color: var(--muted); text-decoration: none; font-size: .86rem; font-weight: 600; }
+    .navlinks a:hover { color: var(--accent); }
+    .hero {
+      background: var(--paper); border-bottom: 1px solid var(--line);
+      padding: clamp(64px, 10vw, 112px) 0 76px;
+    }
+    .eyebrow {
+      margin: 0 0 14px; color: var(--accent); font-size: .75rem;
+      font-weight: 800; letter-spacing: .16em; text-transform: uppercase;
+    }
+    h1 { margin: 0; max-width: 720px; font-size: clamp(3rem, 8vw, 5.7rem); line-height: .98; letter-spacing: -.055em; }
+    .hero-copy { max-width: 650px; margin: 24px 0 0; color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.3rem); }
+    .hero-rule { width: 100%; height: 3px; background: var(--accent); margin: 34px 0 22px; }
+    .pillrow { display: flex; gap: 9px; flex-wrap: wrap; }
+    .pill {
+      padding: 7px 12px; border: 1px solid var(--line); border-radius: 999px;
+      color: var(--muted); font-size: .82rem; font-weight: 650;
+    }
+    main { padding: 42px 0 80px; }
+    section {
+      background: var(--paper); border: 1px solid var(--line); border-radius: 18px;
+      padding: clamp(24px, 5vw, 48px); margin: 0 0 24px;
+      box-shadow: 0 8px 28px rgba(24,35,47,.035);
+      scroll-margin-top: 84px;
+    }
+    .section-kicker { color: var(--accent); font-size: .73rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; margin: 0 0 8px; }
+    h2 { font-size: clamp(1.8rem, 4vw, 2.55rem); line-height: 1.13; letter-spacing: -.035em; margin: 0 0 18px; }
+    h3 { margin: 28px 0 9px; font-size: 1.16rem; line-height: 1.35; }
+    h4 { margin: 18px 0 6px; font-size: 1rem; }
+    p { margin: 0 0 14px; }
+    .muted { color: var(--muted); }
+    .lead { font-size: 1.08rem; color: var(--muted); max-width: 760px; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; margin-top: 22px; }
+    .card { background: var(--soft); border: 1px solid var(--line); border-radius: 12px; padding: 18px; }
+    .card h3 { margin: 0 0 7px; font-size: 1rem; }
+    .card p { margin: 0; color: var(--muted); font-size: .93rem; }
+    ul { padding-left: 1.2rem; margin: 8px 0 18px; }
+    li { margin: 0 0 7px; }
+    .sample-meta {
+      display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 22px;
+    }
+    .tag { background: var(--soft-red); color: #87372e; padding: 5px 10px; border-radius: 6px; font-size: .75rem; font-weight: 750; }
+
+    .article-toc { margin: 1.25rem 0 1.75rem; padding: 1rem 1.25rem; background: var(--soft); border: 1px solid var(--line); border-radius: 10px; }
+    .article-toc strong { display: block; margin-bottom: .5rem; }
+    .article-toc ol { margin: 0; padding-left: 1.25rem; columns: 2; column-gap: 2rem; }
+    .article-toc li { break-inside: avoid; margin: .2rem 0; }
+    @media (max-width: 640px) { .article-toc ol { columns: 1; } }
+    .article { max-width: 790px; }
+    .article p { margin-bottom: 13px; }
+    .note {
+      margin-top: 20px; padding: 14px 16px; background: var(--soft);
+      border-left: 3px solid var(--accent); color: var(--muted); font-size: .88rem;
+    }
+    .table-wrap { overflow-x: auto; margin: 18px 0; }
+    table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: .9rem; }
+    th, td { border: 1px solid var(--line); text-align: left; vertical-align: top; padding: 12px; }
+    th { background: var(--ink); color: white; font-size: .82rem; }
+    td:first-child { background: var(--soft); font-weight: 700; width: 25%; }
+    .example { padding: 18px; border-radius: 12px; margin: 12px 0 20px; }
+    .before { background: var(--soft); border: 1px solid var(--line); }
+    .after { background: var(--soft-red); border: 1px solid #e6c9c4; }
+    .example-label { color: var(--accent); font-size: .72rem; font-weight: 850; letter-spacing: .12em; margin-bottom: 8px; }
+    .step { display: grid; grid-template-columns: 42px 1fr; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+    .step:last-child { border-bottom: 0; }
+    .step-num { color: var(--accent); font-size: .78rem; font-weight: 850; letter-spacing: .08em; padding-top: 2px; }
+    .step strong { display: block; margin-bottom: 3px; }
+    .contact-box { display: grid; grid-template-columns: 160px 1fr; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; margin-top: 22px; }
+    .contact-box div { padding: 12px 14px; border-bottom: 1px solid var(--line); }
+    .contact-box div:nth-last-child(-n+2) { border-bottom: 0; }
+    .contact-label { background: var(--soft); color: var(--muted); font-size: .75rem; font-weight: 800; letter-spacing: .08em; }
+    footer { padding: 22px 0 36px; color: var(--muted); font-size: .82rem; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; border-top: 1px solid var(--line); padding-top: 18px; }
+    @media (max-width: 680px) {
+      .nav { align-items: flex-start; flex-direction: column; padding: 14px 0; }
+      .navlinks { gap: 10px 15px; }
+      .grid { grid-template-columns: 1fr; }
+      .contact-box { grid-template-columns: 1fr; }
+      .contact-box div { border-bottom: 1px solid var(--line) !important; }
+      .contact-box div:last-child { border-bottom: 0 !important; }
+    }
+    @media print {
+      body { background: white; font-size: 10pt; }
+      .topbar { position: static; }
+      .navlinks { display: none; }
+      main { padding: 12px 0; }
+      section { box-shadow: none; break-inside: avoid; margin-bottom: 12px; }
+      a { color: inherit; }
+    }
+  
+    .tab-shell { margin: 28px auto 0; }
+    .main-tabs, .sample-tabs {
+      display: flex; flex-wrap: wrap; gap: 8px;
+      padding: 10px; background: #fff; border: 1px solid var(--line);
+      border-radius: 14px; box-shadow: 0 5px 18px rgba(24,35,47,.04);
+    }
+    .main-tabs { position: sticky; top: 62px; z-index: 8; }
+    .tab-button {
+      appearance: none; border: 1px solid transparent; border-radius: 9px;
+      padding: 10px 15px; background: transparent; color: var(--muted);
+      font: inherit; font-size: .9rem; font-weight: 700; cursor: pointer;
+    }
+    .tab-button:hover { background: var(--soft); color: var(--ink); }
+    .tab-button[aria-selected="true"] {
+      background: var(--ink); color: #fff; border-color: var(--ink);
+    }
+    .sample-tabs { margin: 0 0 20px; background: var(--soft); }
+    [data-tab-panel][hidden], [data-sample-panel][hidden] { display: none !important; }
+    main { padding-top: 24px; }
+    @media (max-width: 680px) {
+      .main-tabs { top: 104px; }
+      .tab-button { flex: 1 1 auto; padding: 9px 11px; }
+    }
+    @media print {
+      .main-tabs, .sample-tabs { display: none !important; }
+      [data-tab-panel][hidden], [data-sample-panel][hidden] { display: block !important; }
+    }
+</style>
+</head>
+<body>
+<header class="topbar">
+<div class="shell nav">
+<div class="brand">SEO Content Writer</div>
+<nav aria-label="Portfolio sections" class="navlinks" role="tablist"><button aria-controls="panel-profile" aria-selected="true" class="tab-button" data-main-tab="profile" role="tab" type="button">Profile</button><button aria-controls="panel-writing" aria-selected="false" class="tab-button" data-main-tab="writing" role="tab" type="button">Writing Samples</button><button aria-controls="panel-strategy" aria-selected="false" class="tab-button" data-main-tab="strategy" role="tab" type="button">SEO Strategy</button><button aria-controls="panel-optimisation" aria-selected="false" class="tab-button" data-main-tab="optimisation" role="tab" type="button">Optimisation</button><button aria-controls="panel-contact" aria-selected="false" class="tab-button" data-main-tab="contact" role="tab" type="button">Contact</button></nav>
+</div>
+</header>
+<div class="hero">
+<div class="shell">
+<p class="eyebrow">Portfolio / 2026</p>
+<h1>SEO Content<br/>Writer</h1>
+<p class="hero-copy">Technical product content. Search-focused strategy. Clear, useful writing.</p>
+<div class="hero-rule"></div>
+<p><strong>Selected work</strong></p>
+<p class="muted" style="max-width:690px">Original editorial samples, an SEO content brief, and an optimisation example demonstrating the approach behind effective blog content.</p>
+<div aria-label="Core strengths" class="pillrow">
+<span class="pill">SEO blog writing</span><span class="pill">Research</span>
+<span class="pill">Search intent</span><span class="pill">Content briefs</span>
+<span class="pill">Editorial optimisation</span><span class="pill">AEO</span>
+</div>
+</div>
+</div>
+<main class="shell">
+<section data-panel-id="profile" data-tab-panel="profile" id="panel-profile" role="tabpanel" tabindex="0">
+<p class="section-kicker">01 / Profile</p>
+<h2>A writer who thinks beyond the word count.</h2>
+<p class="lead">I bring together more than a decade of writing, teaching, research, and content development experience. My technical content work includes translating product specifications, scientific concepts, and specialist information into clear, search-focused articles that help readers understand unfamiliar technologies and make informed decisions.</p>
+<p>My approach starts with the reader's question and the purpose of the page. I use search intent and topic research to shape a useful structure, then focus on accuracy, clarity, natural language, and a consistent editorial voice.</p>
+<h3>Professional foundation</h3>
+<ul>
+<li><strong>12+ years</strong> of experience across English, communication, technical and academic writing, research, and content development.</li>
+<li><strong>Master's degree in Education</strong>, specialising in Reading, Language, and Literature.</li>
+<li><strong>Licensed Professional Teacher</strong> with experience developing learning materials, assessing written work, and explaining complex ideas clearly.</li>
+<li><strong>Freelance academic researcher and writer</strong> since 2014.</li><li><strong>Technical product content:</strong> developed red light therapy articles covering device specifications, dosage concepts, product comparisons, and research interpretation.</li>
+</ul>
+<h3>SEO and content capabilities</h3>
+<div class="grid">
+<div class="card"><h3>Research &amp; planning</h3><p>Keyword research, search intent mapping, SERP review, topic research, content briefs, and content clustering.</p></div>
+<div class="card"><h3>Writing &amp; editing</h3><p>Long-form blog articles, explainers, comparisons, practical guides, technical content, and editorial refinement.</p></div>
+<div class="card"><h3>On-page optimisation</h3><p>Title tags, meta descriptions, heading hierarchy, keyword integration, internal-link opportunities, and content structure.</p></div>
+<div class="card"><h3>Performance analysis</h3><p>Google Search Console interpretation, query and page analysis, CTR opportunities, and content refresh recommendations.</p></div>
+<div class="card"><h3>Answer-focused content</h3><p>Direct answers, concise definitions, question-led sections, scannable formatting, and useful supporting context.</p></div>
+</div>
+<div class="note"><strong>Working principle:</strong> Search visibility matters, but the page still needs to answer the reader's question accurately and well.</div>
+</section>
+<div aria-label="Choose a writing sample" class="sample-tabs" data-tab-panel="writing" hidden="True" id="panel-writing" role="tablist"><button aria-controls="bruise-sample" aria-selected="true" class="tab-button" data-sample-tab="bruises" role="tab" type="button">Red Light Therapy for Bruises</button><button aria-controls="solar-sample" aria-selected="false" class="tab-button" data-sample-tab="solar" role="tab" type="button">Solar Battery Guide</button><button aria-controls="ipl-sample" aria-selected="false" class="tab-button" data-sample-tab="ipl" role="tab" type="button">IPL Joules Explained</button></div><section aria-label="Red light therapy for bruises writing sample" data-panel-id="bruise-sample" data-sample-panel="bruises" data-tab-panel="writing" id="bruise-sample" role="tabpanel" tabindex="0">
+<p class="section-kicker">02 / Writing sample 01</p>
+<div class="sample-meta"><span class="tag">Technical SEO</span><span class="tag">How-to explainer</span><span class="tag">Problem solving</span></div>
+<div class="article">
+<h2>How to Use Red Light Therapy for Bruises: Step-by-Step Protocol</h2>
+<p class="lead">A practical guide to bruising, photobiomodulation, treatment considerations and what current research can—and cannot—tell us about using red and near-infrared light during recovery.</p>
+<nav aria-label="Table of contents" class="article-toc"><strong>Table of contents</strong><ol>
+<li><a href="#what-happens-when-you-bruise">What Happens When You Bruise</a></li>
+<li><a href="#how-does-red-light-therapy-for-bruises-work">How Does Red Light Therapy for Bruises Work?</a></li>
+<li><a href="#benefits-of-red-light-therapy-for-bruises">Benefits of Red Light Therapy for Bruises</a></li>
+<li><a href="#before-you-start-timing-matters">Before You Start: Timing Matters</a></li>
+<li><a href="#steps-to-use-red-light-therapy-for-bruise-recovery">Steps to Use Red Light Therapy for Bruise Recovery</a></li>
+<li><a href="#a-note-on-deep-bruises-and-hematomas">A Note on Deep Bruises and Hematomas</a></li>
+<li><a href="#what-not-to-do">What Not to Do</a></li>
+<li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
+<li><a href="#conclusion-red-light-therapy-for-bruises">Conclusion: Red Light Therapy for Bruises</a></li>
+<li><a href="#references">References</a></li>
+</ol></nav>
+<p>A bruise develops when small blood vessels beneath the skin are damaged and blood leaks into the surrounding tissue. The resulting discolouration can change over several days as the body breaks down and clears the blood. Most minor bruises improve without specialised treatment, although tenderness and swelling can make recovery uncomfortable.</p>
+<p>Red light therapy, also known as photobiomodulation (PBM), is being studied for its effects on inflammation, tissue repair and pain. Some research has examined postoperative bruising and soft-tissue injuries. The findings provide a reason for further study, but they do not establish a standard home-use protocol or show that every bruise will heal faster with light.</p>
+<h2 id="what-happens-when-you-bruise">What Happens When You Bruise</h2>
+<p>A contusion occurs when an impact damages small blood vessels without breaking the skin. Blood collects beneath the surface, producing the familiar blue, purple, red or yellow-green colour changes. The body gradually breaks down components of the leaked blood and clears them from the injured tissue.</p>
+<h3>What Causes Bruises?</h3>
+<p>Direct impact is a common cause, but bruising can also become more frequent or pronounced because of other factors:</p>
+<ul>
+<li><strong>Injury or impact:</strong> A fall, knock or sports-related collision can damage small blood vessels beneath the skin.</li>
+<li><strong>Medication:</strong> Anticoagulants, antiplatelet medicines and some other drugs can make bruising more likely. Do not stop prescribed medication without medical advice.</li>
+<li><strong>Ageing:</strong> Skin and the small blood vessels beneath it can become more fragile with age.</li>
+<li><strong>Underlying conditions:</strong> Some blood, liver or connective-tissue disorders affect clotting or vessel strength.</li>
+</ul>
+<h3>How Long Does It Take for a Bruise to Heal?</h3>
+<p>Many minor bruises fade over roughly two weeks, although size, depth, location, age and individual health can affect the timeline. Colour changes are common as the body processes the trapped blood, but they do not follow an exact schedule for everyone.</p>
+<ul>
+<li><strong>Early stage:</strong> The area may look red or pink and feel tender as blood collects beneath the skin.</li>
+<li><strong>Following days:</strong> The bruise may become blue, purple or darker as blood pigments change.</li>
+<li><strong>Later stage:</strong> Green, yellow or brown tones may appear as the body continues clearing the breakdown products.</li>
+</ul>
+<h2 id="how-does-red-light-therapy-for-bruises-work">How Does Red Light Therapy for Bruises Work?</h2>
+<p>Photobiomodulation uses low-intensity red or near-infrared light to influence biological activity in exposed tissue. Researchers have proposed several mechanisms that may be relevant to recovery, although the exact response depends on the light source, treatment parameters and tissue being studied.</p>
+<ul>
+<li><strong>Cellular signalling:</strong> Light absorption may influence mitochondrial activity and cellular energy pathways, including processes associated with ATP production.</li>
+<li><strong>Inflammatory response:</strong> PBM has been investigated for its ability to modulate inflammatory signalling. The direction and size of the response can vary with dose and context.</li>
+<li><strong>Tissue recovery:</strong> Changes in cellular signalling may affect repair processes, which is one reason PBM is studied in rehabilitation and acute soft-tissue injury.</li>
+</ul>
+<p>These proposed mechanisms should not be treated as proof that a bruise will clear more quickly. A biological explanation is useful for understanding why a treatment is being researched; clinical outcomes are needed to establish whether it makes a meaningful difference.</p>
+<h2 id="benefits-of-red-light-therapy-for-bruises">Benefits of Red Light Therapy for Bruises</h2>
+<p>Research into PBM includes studies of pain, inflammation, tissue repair and postoperative bruising. A randomised, single-blind controlled trial published in 2020 examined treatment after rhinoplasty and reported a reduction in postoperative ecchymosis in the treatment group. The study involved a specific surgical setting and a defined clinical protocol, so its findings cannot automatically be applied to everyday bruises.</p>
+<p>A separate randomised controlled trial involving 46 healthy participants used a controlled thigh-contusion model. It reported improvements in selected measures of quadriceps strength and power during acute recovery. Those functional outcomes are relevant to soft-tissue injury, but they are not the same as proving that the visible bruise disappeared faster.</p>
+<p>A 2024 review also discusses the variation in PBM parameters and outcomes across acute tissue-injury research. Taken together, the evidence is an area of active investigation rather than confirmation of a single, reliable bruise-treatment protocol.</p>
+<h2 id="before-you-start-timing-matters">Before You Start: Timing Matters</h2>
+<p>First, make sure the injury is appropriate for home care. For a minor bruise, standard first aid remains the starting point: protect the area, rest it when needed, and apply a cold pack wrapped in a towel for short periods during the first day or two. Avoid placing ice directly on the skin.</p>
+<p>Do not use a light-based treatment as a substitute for assessment when an injury is severe, the cause is unclear, or symptoms are worsening. There is no established universal timing window for starting PBM on an ordinary bruise. If you are considering it, follow the device instructions and ask a healthcare professional when you have a medical condition, take medication that affects bleeding, or are unsure about the injury.</p>
+<h2 id="steps-to-use-red-light-therapy-for-bruise-recovery">Steps to Use Red Light Therapy for Bruise Recovery</h2>
+<p>There is no single evidence-based home protocol that applies to every bruise or device. The steps below are a practical safety checklist for anyone considering a light-based device; the manufacturer's instructions and advice from a qualified clinician take priority.</p>
+<h3>Step 1: Check the Injury</h3>
+<p>Look for signs that the injury needs medical assessment before you consider a home treatment. Severe pain, substantial swelling, difficulty moving or bearing weight, numbness, a suspected fracture, or a bruise that is rapidly expanding should be assessed. Seek advice for bruises that appear without a clear cause or recur frequently.</p>
+<h3>Step 2: Clean and Prepare the Skin</h3>
+<p>If the skin is intact, keep the treatment area clean and dry. Do not apply a light device over broken, infected or irritated skin unless a healthcare professional has specifically advised you to do so. Avoid rubbing or massaging a tender bruise.</p>
+<h3>Step 3: Understand the Wavelength</h3>
+<p>Red and near-infrared light are different parts of the spectrum. Wavelength can influence how light interacts with tissue, but it does not tell you the dose delivered or guarantee that light reaches a particular depth. Check the device's published specifications and do not assume that two products with similar wavelength labels produce equivalent treatment.</p>
+<h3>Step 4: Position the Device as Directed</h3>
+<p>Follow the distance, contact and positioning instructions supplied with the specific device. Treatment geometry and output vary between panels, handheld devices and wearable formats. Do not improvise a distance or placement based on instructions written for another product.</p>
+<h3>Step 5: Follow the Recommended Session Settings</h3>
+<p>Use only the session duration and frequency specified in the device instructions or recommended by your clinician. Longer sessions are not automatically more effective. PBM response can depend on dose, and the relationship is not simply “more light equals more benefit”.</p>
+<h3>Step 6: Protect Your Eyes and Monitor the Skin</h3>
+<p>Use eye protection when required by the device instructions, particularly when treating areas near the face. Stop if you experience discomfort, unusual warmth, irritation or a worsening reaction. Do not look directly into a light source.</p>
+<h3>Step 7: Track Changes Without Delaying Care</h3>
+<p>Note changes in pain, swelling, movement and skin colour over time. A photograph taken under similar lighting can help you compare appearance, but visible colour alone does not show what is happening deeper in the tissue. Seek medical advice if symptoms worsen or the bruise does not improve as expected.</p>
+<h2 id="a-note-on-deep-bruises-and-hematomas">A Note on Deep Bruises and Hematomas</h2>
+<p>A hematoma is a collection of blood that has pooled outside blood vessels, sometimes forming a larger or deeper swelling. It can occur after surgery, a significant impact or other injury. A large, painful or expanding hematoma should be assessed by a healthcare professional, particularly if it affects movement or is accompanied by numbness or increasing pressure.</p>
+<p>Do not assume that near-infrared light will reach or resolve a deep collection of blood. Penetration and dose depend on several factors, and current evidence does not establish a home PBM protocol for treating hematomas. Medical assessment should guide care.</p>
+<h2 id="what-not-to-do">What Not to Do</h2>
+<p>Do not rely on red light therapy to manage an injury that may need medical attention. Avoid using a device:</p>
+<ul>
+<li>Over broken, infected or significantly irritated skin unless a clinician has advised otherwise.</li>
+<li>In place of assessment for severe pain, rapidly increasing swelling or a suspected fracture.</li>
+<li>Without checking precautions for photosensitising medication or a condition that affects light sensitivity.</li>
+<li>Near the eyes without following the device's eye-safety instructions.</li>
+<li>At settings, distances or session lengths intended for a different device.</li>
+</ul>
+<p>During the first 24–48 hours after a minor injury, avoid activities that aggravate pain or swelling. Use a wrapped cold pack and follow standard first-aid advice. A light-based treatment should not replace these measures.</p>
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+<h3>Does red light therapy actually help bruises heal faster?</h3>
+<p>Some clinical research has examined PBM in postoperative bruising and controlled soft-tissue injury. The findings are promising in specific contexts, but they do not establish that red light therapy reliably speeds up the healing of ordinary bruises.</p>
+<h3>When should I start red light therapy on a bruise?</h3>
+<p>There is no universally established start time for treating an ordinary bruise with PBM. First assess whether the injury needs medical attention, then follow the device instructions and seek clinical advice if you are unsure.</p>
+<h3>How long should each session be?</h3>
+<p>Session length depends on the device and its tested parameters. Follow the manufacturer's instructions or a clinician's recommendation rather than applying a generic time to every device.</p>
+<h3>What wavelength is best for bruising?</h3>
+<p>Studies use different red and near-infrared wavelengths and treatment protocols. The available evidence does not identify one wavelength as best for every type of bruise.</p>
+<h3>Can I use red light therapy on facial bruises?</h3>
+<p>Take particular care around the eyes and follow the device's eye-safety instructions. Facial bruising after an injury or procedure should be assessed if there is significant pain, swelling, visual disturbance or another concerning symptom.</p>
+<h3>Is red light therapy safe for bruises?</h3>
+<p>Safety depends on the device, settings, treatment area and individual circumstances. Check the instructions and ask a healthcare professional if you take photosensitising medication, have a condition affecting light sensitivity or clotting, or are unsure whether the injury needs assessment.</p>
+<h2 id="conclusion-red-light-therapy-for-bruises">Conclusion: Red Light Therapy for Bruises</h2>
+<p>Photobiomodulation is being investigated for its effects on inflammation, tissue repair and postoperative bruising. Clinical studies have reported findings in specific settings, but they do not establish a universal treatment schedule or guarantee faster recovery from an everyday bruise.</p>
+<p>Start with appropriate first aid and pay attention to signs that need medical assessment. If you choose to explore a light-based device, check its specifications, follow its instructions and assess claims against the actual research—not just the proposed mechanism.</p>
+<h3 id="references">References</h3>
+<ul>
+<li>Karimi, K. et al. (2020). Randomised, single-blind controlled study of photobiomodulation for ecchymosis following rhinoplasty. <a href="https://pubmed.ncbi.nlm.nih.gov/32410200/" rel="noopener noreferrer" target="_blank">PubMed record</a>.</li>
+<li>Wells, et al. (2023). Randomised controlled study of pulsed red and blue photobiomodulation in a thigh-contusion model. <a href="https://pubmed.ncbi.nlm.nih.gov/37917978/" rel="noopener noreferrer" target="_blank">PubMed record</a>.</li>
+<li>Lawrence and Sorra (2024). Review of photobiomodulation for acute tissue injury. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11503318/" rel="noopener noreferrer" target="_blank">Full text</a>.</li>
+</ul>
+</div>
+<div class="note"><strong>Editorial note: </strong>Independent portfolio adaptation on the same broad subject, following the practical, step-by-step structure of the original published article. It does not reproduce company-owned copy or product-specific claims.</div><h3>Search performance snapshot</h3><p class="muted">An anonymised Google Search Console snapshot supplied for the related published article I contributed to. The reporting date range is 3 months.</p><div class="grid"><div class="card"><h3>1,410</h3><p>Organic clicks</p></div><div class="card"><h3>94,425</h3><p>Search impressions</p></div><div class="card"><h3>1.5%</h3><p>Click-through rate</p></div><div class="card"><h3>5.7</h3><p>Average position</p></div></div><div class="note"><strong>Measurement note: </strong>These figures belong to the related published page, not this independent portfolio draft. The figures are anonymised and should only be shared if disclosure is permitted.</div>
+</section>
+<section data-panel-id="solar-sample" data-sample-panel="solar" data-tab-panel="writing" hidden="True" id="solar-sample" role="tabpanel" tabindex="0">
+<p class="section-kicker">03 / Writing sample 02</p>
+<div class="sample-meta"><span class="tag">Energy storage</span><span class="tag">Technical explainer</span><span class="tag">Commercial research intent</span></div>
+<div class="article">
+<h2>How to Choose a Solar Battery for Your Home</h2>
+<p class="lead">A practical guide to understanding battery capacity, power output, backup needs, and system compatibility before comparing products.</p>
+<p>A solar battery can store electricity generated during the day for use later, including in the evening or during a grid outage when the system is designed to provide backup power. Choosing one involves more than comparing the largest capacity or the lowest price. The right system depends on how much energy a household uses, which appliances need support, and how the battery will work with the solar installation.</p>
+<h3>Start with what you want the battery to do</h3>
+<p>Some households want to use more of their own solar generation after sunset. Others prioritise backup power for essential appliances during outages. A system designed for daily energy shifting may have different requirements from one intended to support high-demand appliances or provide longer backup periods.</p>
+<p>List the appliances and circuits you want to keep running, estimate how much energy they use, and decide how long you want them supported. This gives an installer a more useful starting point than choosing a battery based on household size alone.</p>
+<h3>Understand capacity and power output</h3>
+<p><strong>Energy capacity (kWh)</strong> describes how much energy the battery can store. <strong>Power output (kW)</strong> describes how much power the system can deliver at one time. Capacity helps estimate how long a battery can supply a given load; power output affects how many appliances can operate simultaneously.</p>
+<p>A battery may store enough energy to run selected appliances for several hours, but its power rating and inverter may not support all those appliances running together. Motors and compressors can also have starting demands that differ from their normal running power.</p>
+<h3>Compare usable capacity, not just the headline figure</h3>
+<p>Manufacturers may state both nominal and usable capacity. Usable capacity is the portion of stored energy available for the system's intended operation under the manufacturer's specified conditions. Check the product documentation rather than assuming the full nameplate capacity can be delivered to household loads.</p>
+<h3>Check inverter and solar-system compatibility</h3>
+<p>A battery does not operate in isolation. Its compatibility with the solar inverter, battery management system, electrical configuration, and backup equipment matters. Some installations use a DC-coupled configuration, while others use AC coupling. The appropriate design depends on the existing equipment, the planned system, and the functions required.</p>
+<h3>Review warranty and operating conditions</h3>
+<p>Compare warranty duration and the conditions attached to it. Look for stated energy throughput or cycle limits, capacity-retention terms, temperature and installation requirements, and the process for warranty claims. A warranty headline is only useful when you understand what the manufacturer commits to cover.</p>
+<h3>Ask for a load-based system design</h3>
+<p>Before purchasing, ask the installer to explain the expected loads, usable energy, continuous and surge power, backup configuration, and likely runtime under the proposed operating conditions. A well-matched solar battery is not necessarily the biggest one available. It is the system whose capacity, power output, compatibility, and operating limits fit the household's actual energy requirements.</p>
+</div>
+<div class="note"><strong>Editorial note:</strong> Independent demonstration article created for this portfolio to show how technical product information can be translated into practical consumer guidance.</div>
+</section>
+<section data-panel-id="ipl-sample" data-sample-panel="ipl" data-tab-panel="writing" hidden="True" id="ipl-sample" role="tabpanel" tabindex="0">
+<p class="section-kicker">04 / Writing sample 03</p>
+<div class="sample-meta"><span class="tag">Technical product education</span><span class="tag">Informational intent</span><span class="tag">Consumer technology</span></div>
+<div class="article">
+<h2>IPL Joules Explained: What They Mean for Hair Removal Results</h2>
+<p class="lead">A practical guide to IPL energy ratings, fluence, pulse delivery and the details that matter when comparing at-home hair removal devices.</p>
+<nav aria-label="Table of contents" class="article-toc"><strong>Table of contents</strong><ol>
+<li><a href="#what-ipl-joules-mean">What IPL Joules Mean</a></li>
+<li><a href="#why-ipl-joules-matter-for-hair-removal-results">Why IPL Joules Matter for Hair Removal Results</a></li>
+<li><a href="#what-ipl-joule-ratings-actually-mean-in-practice">What IPL Joule Ratings Actually Mean in Practice</a></li>
+<li><a href="#how-many-joules-are-actually-effective-for-ipl">How Many Joules Are Actually Effective for IPL?</a></li>
+<li><a href="#why-delivery-method-matters-as-much-as-the-number">Why Delivery Method Matters as Much as the Number</a></li>
+<li><a href="#typical-ipl-joule-levels">Typical IPL Joule Levels</a></li>
+<li><a href="#what-to-look-for-when-comparing-ipl-devices">What to Look for When Comparing IPL Devices</a></li>
+<li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+<li><a href="#references">References</a></li>
+</ol></nav>
+<p>You're comparing IPL devices. One specification lists 9J, another says 21J, and a third advertises 26J. The numbers are easy to spot, but they are not always easy to interpret. What does each figure measure, and does a higher number mean better hair-reduction results?</p>
+<p>Joules are one part of an IPL device's technical specification. The treatment window, fluence, pulse structure and safety controls all affect how the energy is delivered. Understanding those details gives you a more useful basis for comparing devices than the headline number alone.</p>
+<h2 id="what-ipl-joules-mean">What IPL Joules Mean</h2>
+<p>Joules measure energy. In an IPL specification, the figure may describe the optical energy delivered in one pulse or across a defined sequence of pulses. The manufacturer's technical documentation should make clear which measurement is being reported.</p>
+<h3>What Is a Joule, Exactly?</h3>
+<p>A joule (J) is the standard unit of energy. In the context of IPL, it describes an amount of optical energy emitted during treatment. It is not a direct measure of brightness, treatment quality or the amount of energy absorbed by a hair follicle.</p>
+<p>The distinction matters because the same total energy can be distributed across different areas or delivered over different time patterns. A headline joule figure is useful, but it needs context before it can support a meaningful comparison.</p>
+<h3>Joules vs J/cm² and Why the Difference Matters</h3>
+<p>Fluence, also called energy density or radiant exposure, is expressed in joules per square centimetre (J/cm²). It describes the amount of energy delivered over a given area. Total energy tells you how much energy is emitted; fluence adds the size of the illuminated treatment area to the picture.</p>
+<p>For example, two devices can report the same total energy but have different fluence values if their treatment windows are different sizes. A smaller window can concentrate a given amount of energy over a smaller area, while a larger window distributes it over more skin.</p>
+<p>When the values use the same measurement basis, the simplified relationship is:</p>
+<p><strong>Fluence (J/cm²) = energy (J) ÷ illuminated area (cm²)</strong></p>
+<p>For multi-pulse systems, check whether the energy figure refers to an individual sub-pulse or the complete pulse sequence. The calculation only works when the energy and area figures describe the same treatment event.</p>
+<h2 id="why-ipl-joules-matter-for-hair-removal-results">Why IPL Joules Matter for Hair Removal Results</h2>
+<p>IPL uses filtered, broad-spectrum light. During hair reduction, melanin in the hair absorbs part of that light and converts it to heat. The intended effect is to heat the follicular target while managing exposure to the surrounding skin.</p>
+<p>Energy matters because the treatment needs to deliver an appropriate exposure to the target. However, the relationship between a device's advertised output and a person's results is influenced by several other factors, including hair characteristics, skin tone, wavelength range, pulse parameters and treatment schedule.</p>
+<h3>Too Little Energy</h3>
+<p>If the delivered exposure is below the level needed for the intended treatment, results may be limited. A low headline joule figure alone does not establish that a device is ineffective, though: fluence, pulse delivery, treatment window and the device's intended use all need to be considered together.</p>
+<h3>Sufficient Energy</h3>
+<p>Effective light-based hair reduction depends on delivering an appropriate dose to the follicular target. Hair growth cycles also matter because IPL is generally more effective when the hair is in a suitable growth phase. Repeated treatments are therefore part of most at-home treatment schedules.</p>
+<p>There is no single joule rating that guarantees a particular result across all devices and users. The correct setting is the one recommended for the specific device and compatible skin and hair characteristics.</p>
+<h3>Coarse Hair Needs More</h3>
+<p>Hair colour, thickness and depth can influence how IPL is absorbed and how a treatment responds. Coarse, dark hair may absorb light differently from fine or lightly pigmented hair. That does not mean consumers should simply select the highest available setting; the device's skin-tone guidance and treatment instructions still apply.</p>
+<h3>Skin Tone Plays a Role Too</h3>
+<p>Melanin is present in both hair and the epidermis. Skin tone therefore affects how light is absorbed at the surface as well as in the hair. An energy setting suitable for one person may be unsuitable for another, which is why skin-tone compatibility, built-in sensors where available, and device-specific safety instructions matter as much as output.</p>
+<h2 id="what-ipl-joule-ratings-actually-mean-in-practice">What IPL Joule Ratings Actually Mean in Practice</h2>
+<p>At-home IPL devices publish energy figures in different ways. Some describe energy per pulse, while others report cumulative output across a sequence or a selected operating mode. A number cannot be compared fairly until you know what it includes.</p>
+<p>When a specification refers to cumulative energy across multiple pulses, it should not be read as though the entire amount were emitted in one instantaneous flash. Look for the number of sub-pulses, pulse duration, intervals between pulses and the fluence associated with the mode.</p>
+<p>Manufacturers do not always present these details in a consistent format. If the technical documentation does not explain the basis of the headline figure, treat direct comparisons with caution.</p>
+<h2 id="how-many-joules-are-actually-effective-for-ipl">How Many Joules Are Actually Effective for IPL?</h2>
+<p>This is a common question when comparing devices, but a universal threshold would be misleading. Total energy is only one measurement, and the effective exposure depends on how the device distributes and delivers that energy.</p>
+<p>Some consumer devices publish fluence values in the region of a few joules per square centimetre. Those figures should still be interpreted in the context of the device's wavelength range, pulse duration, treatment window and intended use. A number taken from one product specification cannot be treated as a general recommendation for another device.</p>
+<p>Lower-output devices may be designed around different treatment schedules or use cases. A higher-output specification does not automatically mean faster or more lasting results, particularly if the figure represents a different pulse structure or measurement basis.</p>
+<p>This is why two devices with similar advertised joule ratings can operate differently in practice. The technical details behind the number are what make a comparison meaningful.</p>
+<h2 id="why-delivery-method-matters-as-much-as-the-number">Why Delivery Method Matters as Much as the Number</h2>
+<p>Two devices can advertise similar energy figures but deliver that energy over different time patterns. Pulse structure affects how light exposure is distributed during treatment, so it is an important part of the specification.</p>
+<h3>Traditional Single-Pulse IPL</h3>
+<p>A single-pulse system delivers its energy in one pulse for each flash. Its performance and safety depend on the pulse parameters, fluence, wavelength range, treatment window and the device's instructions for use. The label “single pulse” does not, by itself, indicate whether a system is more or less effective than a multi-pulse design.</p>
+<h3>SHR Mode: Multiple Pulses</h3>
+<p>Some systems use a sequence of shorter pulses rather than one exposure. The total energy may be described cumulatively across the sequence, while the timing and interval between sub-pulses influence how the exposure is delivered.</p>
+<p>Do not assume that all systems using a multi-pulse or SHR label operate in the same way. Compare the number of pulses, pulse duration, intervals and fluence where those details are available. A cumulative energy figure alone does not tell you how much energy is delivered in each sub-pulse or how the skin responds between exposures.</p>
+<h2 id="typical-ipl-joule-levels">Typical IPL Joule Levels</h2>
+<p>Published figures vary between manufacturers and operating modes. The ranges below are illustrative categories, not clinical thresholds or a ranking of treatment quality.</p>
+<table>
+<thead><tr><th>Device output description</th><th>Typical context</th><th>What to check</th></tr></thead>
+<tbody>
+<tr><td>Lower total-energy figures</td><td>Some entry-level consumer devices</td><td>Fluence, treatment window, intended schedule and compatible hair and skin characteristics</td></tr>
+<tr><td>Mid-range total-energy figures</td><td>Some standard at-home systems</td><td>Whether the figure is per pulse or cumulative, plus pulse duration and safety guidance</td></tr>
+<tr><td>Higher cumulative figures</td><td>Some multi-pulse systems</td><td>Number of sub-pulses, pulse intervals, fluence and the measurement basis for the total</td></tr>
+</tbody>
+</table>
+<p>Figures are not directly comparable unless the treatment area, pulse structure and measurement method are also understood.</p>
+<h2 id="what-to-look-for-when-comparing-ipl-devices">What to Look for When Comparing IPL Devices</h2>
+<p>If you're comparing specifications, look beyond the largest number on the product page. These details give a clearer picture of what a device is designed to deliver:</p>
+<ul>
+<li><strong>Total energy output (joules):</strong> Check whether the figure describes one pulse, a sequence or a particular treatment mode.</li>
+<li><strong>Fluence (J/cm²):</strong> Find the energy density and confirm which setting or mode it applies to.</li>
+<li><strong>Treatment window:</strong> Compare the illuminated area because it affects how total energy is distributed.</li>
+<li><strong>Pulse delivery:</strong> Review pulse duration, number of sub-pulses and intervals where disclosed.</li>
+<li><strong>Wavelength and filters:</strong> Check the spectral range and how the device is intended to target hair.</li>
+<li><strong>Skin compatibility and safety:</strong> Read the skin-tone chart, sensor guidance, contraindications and instructions for use.</li>
+<li><strong>Evidence behind performance claims:</strong> Look for the test method, study population, treatment schedule and outcome measured.</li>
+</ul>
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+<h3>Is a higher joule rating always better for IPL hair removal?</h3>
+<p>No single rating determines performance. A joule figure needs to be read alongside fluence, treatment window, pulse structure, wavelength and skin-safety guidance. Higher output alone does not guarantee better results.</p>
+<h3>What is fluence, and how does it differ from joules?</h3>
+<p>Joules measure total energy. Fluence, expressed in J/cm², describes energy delivered per unit area. It accounts for the size of the illuminated treatment window.</p>
+<h3>What does SHR mode mean on an IPL device?</h3>
+<p>SHR is a label used for multi-pulse delivery approaches. The exact pulse sequence can differ between devices, so check the technical specifications rather than assuming the label describes one standard configuration.</p>
+<h3>Can IPL cause burns if the energy setting is too high?</h3>
+<p>IPL can cause burns or other skin reactions when used at unsuitable settings or on incompatible skin. Follow the device's skin-tone guidance, patch-test instructions and safety precautions. Stop treatment and seek advice if you experience a burn or significant reaction.</p>
+<h3>Does a cumulative joule figure mean all the energy is delivered in one flash?</h3>
+<p>Not necessarily. A cumulative figure may represent energy delivered across several sub-pulses. Check the manufacturer's explanation of the pulse sequence and whether the number refers to one pulse or the full treatment event.</p>
+<h3>How many sessions does it take to see results?</h3>
+<p>That depends on the device, treatment schedule, hair and skin characteristics, and the area being treated. Follow the schedule in the device instructions and assess results over the recommended treatment cycle rather than relying on a generic timeline.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>IPL joules measure energy, but the headline figure is only one part of a device's technical specification. Fluence, treatment-window size, wavelength, pulse duration, pulse structure and skin-safety features all influence how the energy is delivered.</p>
+<p>When comparing devices, establish exactly what the joule figure represents before using it to judge performance. A clear specification and credible evidence are more useful than a large number without context.</p>
+<h3 id="references">References</h3>
+<ul>
+<li>Ash, C., Town, G. and Bjerring, P. (2008). Relevance of the structure of time-resolved spectral output to light-tissue interaction using intense pulsed light (IPL). <em>Lasers in Surgery and Medicine</em>, 40(2), pp.83–92. <a href="https://doi.org/10.1002/lsm.20596" rel="noopener noreferrer" target="_blank">doi:10.1002/lsm.20596</a>.</li>
+<li>Dierickx, C.C., Grossman, M.C., Farinelli, W.A. and Anderson, R.R. (1998). Permanent Hair Removal by Normal-Mode Ruby Laser. <em>Archives of Dermatology</em>, 134(7). <a href="https://doi.org/10.1001/archderm.134.7.837" rel="noopener noreferrer" target="_blank">doi:10.1001/archderm.134.7.837</a>.</li>
+<li>Gold, M.H., Foster, A. and Biron, J.A. (2010). Low-Energy Intense Pulsed Light for Hair Removal at Home. <em>The Journal of Clinical and Aesthetic Dermatology</em>, 3(2), p.48. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2921762/" rel="noopener noreferrer" target="_blank">Full text</a>.</li>
+<li>Lask, G. et al. (1999). The role of laser and intense light sources in photo-epilation: a comparative evaluation. <em>Journal of Cutaneous Laser Therapy</em>, 1(1), pp.3–13. <a href="https://doi.org/10.1080/14628839950517039" rel="noopener noreferrer" target="_blank">doi:10.1080/14628839950517039</a>.</li>
+<li>Lepselter, J. and Elman, M. (2004). Biological and clinical aspects in laser hair removal. <em>Journal of Dermatological Treatment</em>, 15(2), pp.72–83. <a href="https://doi.org/10.1080/09546630310023152" rel="noopener noreferrer" target="_blank">doi:10.1080/09546630310023152</a>.</li>
+</ul>
+</div>
+<div class="note"><strong>Editorial note:</strong> Independent portfolio adaptation on the same broad technical subject, written using publicly available technical and clinical references. It does not reproduce employer-owned copy or product-specific promotional claims.</div>
+<h3>Search performance snapshot</h3>
+<p class="muted">An anonymised Google Search Console snapshot supplied for a related published article I contributed to. The reporting date range is 3 months.</p>
+<div class="grid">
+<div class="card"><h3>141</h3><p>Organic clicks</p></div>
+<div class="card"><h3>9,628</h3><p>Search impressions</p></div>
+<div class="card"><h3>1.5%</h3><p>Click-through rate</p></div>
+<div class="card"><h3>5.8</h3><p>Average position</p></div>
+</div>
+<div class="note"><strong>Measurement note:</strong> These are results from the related published page, not from this independent portfolio draft. The figures are presented without a site name or URL and should only be shared if disclosure of anonymised performance data is permitted.</div>
+<h3>Technical references</h3>
+<ul>
+<li><a href="https://www.ncbi.nlm.nih.gov/books/NBK580525/" rel="noopener" target="_blank">Intense Pulsed Light (IPL) Therapy</a>, StatPearls / NCBI Bookshelf — overview of wavelength, pulse duration, fluence, cooling, and spot size.</li>
+<li><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1468-3083.2011.04406.x" rel="noopener" target="_blank">Guidelines on the safety of light-based home-use hair removal devices</a>, European Society for Laser Dermatology.</li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/30681170/" rel="noopener" target="_blank">Light-based home-use devices for hair removal: Why do they work and how effective they are?</a>, review of biological mechanisms and clinical evidence.</li>
+</ul>
+</section>
+<section data-panel-id="technical-experience" data-tab-panel="profile" id="technical-experience" role="tabpanel" tabindex="0">
+<p class="section-kicker">03 / Relevant technical writing experience</p>
+<h2>Making specialist product information understandable.</h2>
+<p class="lead">Professional writing experience includes research-led content about red light therapy devices and photobiomodulation-related topics.</p>
+<p>This work required turning technical and scientific material into practical explanations for a general reader while maintaining clear distinctions between established evidence, product specifications, and manufacturer claims.</p>
+<div class="grid">
+<div class="card"><h3>Technical specifications</h3><p>Explained device features and measurable specifications, including wavelengths, irradiance, and output terminology.</p></div>
+<div class="card"><h3>Dosage and measurement</h3><p>Developed educational content distinguishing concepts such as irradiance, exposure time, and delivered energy.</p></div>
+<div class="card"><h3>Research interpretation</h3><p>Reviewed scientific literature and translated study methods, findings, and limitations into accessible editorial explanations.</p></div>
+<div class="card"><h3>Product evaluation</h3><p>Compared product features and use cases while separating evidence-based information from promotional positioning.</p></div>
+</div>
+<div class="note"><strong>Portfolio disclosure:</strong> This section describes relevant professional experience without reproducing employer-owned articles, unpublished briefs, confidential product information, or proprietary analytics. Publicly available work samples can be linked separately where sharing is permitted.</div>
+</section>
+<section data-panel-id="panel-strategy" data-tab-panel="strategy" hidden="True" id="panel-strategy" role="tabpanel" tabindex="0">
+<p class="section-kicker">04 / SEO strategy sample</p>
+<h2>Sample SEO content brief</h2>
+<p class="lead">Topic: How to Build a Skincare Routine for Beginners</p>
+<p>This brief illustrates how a writing assignment can be translated into a search-focused article plan. The keyword examples below are proposed targets, not live search-volume or difficulty data.</p>
+<h3>Search strategy</h3>
+<div class="table-wrap">
+<table>
+<tbody>
+<tr><td>Primary keyword</td><td>skincare routine for beginners</td></tr>
+<tr><td>Search intent</td><td>Informational. The reader wants a simple starting routine, product order, and guidance on what to include.</td></tr>
+<tr><td>Audience</td><td>People new to skincare who want practical, uncomplicated guidance.</td></tr>
+<tr><td>Content format</td><td>Beginner's guide with clear steps, product categories, and a concise FAQ section.</td></tr>
+<tr><td>Reader outcome</td><td>Understand the essential steps and build a routine without buying unnecessary products.</td></tr>
+<tr><td>Tone</td><td>Friendly, evidence-aware, practical, and non-alarmist.</td></tr>
+</tbody>
+</table>
+</div>
+<h3>Proposed heading structure</h3>
+<ul>
+<li><strong>H1:</strong> How to Build a Skincare Routine for Beginners</li>
+<li><strong>H2:</strong> Start with the Three Essentials</li>
+<li><strong>H3:</strong> Cleanser | Moisturiser | Sunscreen</li>
+<li><strong>H2:</strong> What Order Should You Apply Skincare Products?</li>
+<li><strong>H2:</strong> When Should You Add a Serum or Treatment?</li>
+<li><strong>H2:</strong> How to Build a Routine for Your Skin Type</li>
+<li><strong>H2:</strong> Common Beginner Skincare Mistakes</li>
+<li><strong>H2:</strong> Frequently Asked Questions</li>
+</ul>
+<h3>On-page recommendations</h3>
+<ul>
+<li><strong>Title tag:</strong> Skincare Routine for Beginners: A Simple Step-by-Step Guide</li>
+<li><strong>Meta description:</strong> New to skincare? Learn which products to start with, the right order to apply them, and how to build a simple daily routine.</li>
+<li><strong>Internal links:</strong> Link to relevant guides on sunscreen, moisturisers, cleansing, and ingredient explainers where those resources exist.</li>
+<li><strong>Content quality:</strong> Avoid prescribing a universal routine. Explain product categories, acknowledge differences in skin needs, and support health-related claims with reliable sources.</li>
+<li><strong>Answer-focused formatting:</strong> Define key terms directly, use descriptive subheadings, and answer common questions in concise, self-contained sections.</li>
+</ul>
+<h3>Research and validation checklist</h3>
+<p>Before drafting, validate the target query and related questions in live search results and keyword tools. Review competing pages for intent, recurring subtopics, content gaps, and SERP features. Confirm all factual and health-related claims against credible sources before publication.</p>
+</section>
+<section data-panel-id="panel-optimisation" data-tab-panel="optimisation" hidden="True" id="panel-optimisation" role="tabpanel" tabindex="0">
+<p class="section-kicker">05 / Content optimisation</p>
+<h2>From broad copy to search-focused copy</h2>
+<p class="lead">An illustrative editorial edit showing how a paragraph can become more specific, useful, and aligned with a reader's likely question.</p>
+<div class="example before">
+<div class="example-label">Before / Generic draft</div>
+<p>Skincare is important for everyone. There are many products that can help your skin look better. You should choose products that work for you and use them regularly. It is important to have a good routine and take care of your skin.</p>
+</div>
+<div class="example after">
+<div class="example-label">After / Edited version</div>
+<p>A beginner's skincare routine can start with three steps: cleanse, moisturise, and apply sunscreen in the morning. Choose a gentle cleanser and a moisturiser that feel comfortable on your skin, then use broad-spectrum SPF 30 or higher on exposed areas. Once these basics fit comfortably into your day, add a targeted product only if it addresses a specific concern.</p>
+</div>
+<h3>What changed—and why</h3>
+<ul>
+<li><strong>Intent alignment:</strong> The revision answers the practical question of where a beginner should start.</li>
+<li><strong>Specificity:</strong> It replaces vague advice with three recognisable routine steps.</li>
+<li><strong>Natural keyword use:</strong> The phrase “beginner's skincare routine” appears in context rather than being repeated mechanically.</li>
+<li><strong>Actionability:</strong> The reader gets a clear sequence and a sensible condition for adding more products.</li>
+<li><strong>Editorial restraint:</strong> It avoids promising results or implying that one routine suits everyone.</li>
+</ul>
+<div class="note">The same process applies at page level: identify the reader's task, remove repetition, strengthen missing explanations, clarify headings, verify claims, and improve internal pathways. Optimisation should make the page more useful—not simply make it longer or increase keyword frequency.</div>
+</section>
+<section data-panel-id="profile-section-3" data-tab-panel="profile" id="profile-section-3" role="tabpanel" tabindex="0">
+<p class="section-kicker">06 / Working approach</p>
+<h2>A clear process from brief to publish-ready draft.</h2>
+<div class="step"><div class="step-num">01</div><div><strong>Understand the brief</strong><span class="muted">Clarify the audience, business objective, topic, deliverable, and editorial requirements.</span></div></div>
+<div class="step"><div class="step-num">02</div><div><strong>Research the search landscape</strong><span class="muted">Review the target query, search intent, competing results, related questions, and credible source material.</span></div></div>
+<div class="step"><div class="step-num">03</div><div><strong>Plan the article</strong><span class="muted">Build the heading structure, identify key subtopics, map internal-link opportunities, and define the reader outcome.</span></div></div>
+<div class="step"><div class="step-num">04</div><div><strong>Write and substantiate</strong><span class="muted">Draft in a natural voice, use specific examples, and verify factual claims against appropriate sources.</span></div></div>
+<div class="step"><div class="step-num">05</div><div><strong>Optimise and edit</strong><span class="muted">Refine titles, headings, keyword use, readability, answer clarity, and internal-link placement.</span></div></div>
+<div class="step"><div class="step-num">06</div><div><strong>Review performance</strong><span class="muted">Where data is available, use Search Console and analytics to identify refresh, CTR, and content-gap opportunities.</span></div></div>
+</section>
+<section data-panel-id="panel-contact" data-tab-panel="contact" hidden="True" id="panel-contact" role="tabpanel" tabindex="0">
+<p class="section-kicker">07 / Contact</p>
+<h2>Let's create content that earns attention by being genuinely useful.</h2>
+<p class="lead">Available for SEO blog writing, research-led articles, content briefs, and editorial optimisation.</p>
+<div class="contact-box">
+<div class="contact-label">CONTACT</div><div><strong>angeline.trayfalgar@gmail.com</strong></div>
+<div class="contact-label">LOCATION</div><div>Philippines · Remote</div>
+<div class="contact-label">RESUME</div><div><a href="https://iammstrayfalgar07-debug.github.io/Angeline-Projects/resume.pdf"
+     target="_blank"
+     rel="noopener noreferrer">
+    View or Download Resume ↗
+  </a>
+</div>
+<div class="contact-label">ADDITIONAL PROFILE</div><div><a href="https://iammstrayfalgar07-debug.github.io/Angeline-Projects/" rel="noopener noreferrer" target="_blank">View my professional profile: Instructional Design, Training &amp; Education ↗</a></div>
+</div>
+<div class="note">Portfolio note: The two articles, content brief, and optimisation example on this page are independent demonstration pieces created for this portfolio. They do not reproduce confidential employer materials or claim client ownership.</div>
+</section>
+</main>
+<footer>
+<div class="shell footer-inner">
+<span>SEO Content Writer · Selected work &amp; strategy samples</span>
+<span>© <span id="year">2026</span> · Independent portfolio</span>
+</div>
+</footer>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const mainTabs = [...document.querySelectorAll("[data-main-tab]")];
+    const panels = [...document.querySelectorAll("main > [data-tab-panel]")];
+    const sampleTabs = [...document.querySelectorAll("[data-sample-tab]")];
+    const samplePanels = [...document.querySelectorAll("main > [data-sample-panel]")];
+
+    function activateMainTab(name) {
+      mainTabs.forEach(tab => {
+        const active = tab.dataset.mainTab === name;
+        tab.setAttribute("aria-selected", String(active));
+      });
+      panels.forEach(panel => {
+        panel.hidden = panel.dataset.tabPanel !== name;
+      });
+      if (name === "writing") activateSampleTab("bruises");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function activateSampleTab(name) {
+      sampleTabs.forEach(tab => {
+        const active = tab.dataset.sampleTab === name;
+        tab.setAttribute("aria-selected", String(active));
+      });
+      samplePanels.forEach(panel => {
+        panel.hidden = panel.dataset.samplePanel !== name;
+      });
+    }
+
+    mainTabs.forEach(tab => tab.addEventListener("click", () => activateMainTab(tab.dataset.mainTab)));
+    sampleTabs.forEach(tab => tab.addEventListener("click", () => activateSampleTab(tab.dataset.sampleTab)));
+
+    mainTabs.forEach((tab, index) => tab.addEventListener("keydown", event => {
+      if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
+        event.preventDefault();
+        const direction = event.key === "ArrowRight" ? 1 : -1;
+        const next = mainTabs[(index + direction + mainTabs.length) % mainTabs.length];
+        next.focus();
+        activateMainTab(next.dataset.mainTab);
+      }
+    }));
+</script>
+</body>
+</html>
